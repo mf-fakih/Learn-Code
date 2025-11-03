@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Menghilangkan bullet default */
+      .horizontal-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+      }
+
+      /* Style setiap item menu */
+      .horizontal-menu li {
+        margin: 0 15px;
+      }
+
+      /* Style link menu */
+      .horizontal-menu li a {
+        display: block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      /* Hover effect */
+      .horizontal-menu li a:hover {
+        background-color: #575757;
+        border-radius: 4px;
+      }
+
+      /* Menu vertical */
+
+      /* Menghilangkan bullet default */
+      .vertical-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 200px; /* Lebar menu */
+        background-color: #333;
+      }
+
+      /* Style setiap item menu */
+      .vertical-menu li {
+        border-bottom: 1px solid #444;
+      }
+
+      /* Style link menu */
+      .vertical-menu li a {
+        display: block;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: #333;
+      }
+
+      /* Efek hover */
+      .vertical-menu li a:hover {
+        background-color: #575757;
+      }
+      /* list-style-position */
+      ul.outside {
+        list-style-position: outside;
+      }
+
+      ul.inside {
+        list-style-position: inside;
+      }
+
+      /* list-style-image */
+      .list-image {
+        list-style-image: url("soft-drink.png");
+      }
+
+      /* list-style */
+      .list-style {
+        list-style: square inside url("/image/beverages.png");
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="horizontal-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <hr>
+    <!-- Menu Navigasi Vertikal -->
+    <nav>
+      <ul class="vertical-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- list-style-position -->
+    <h1>Property list-style-position</h1>
+
+    <h2>list-style-position: outside (default)</h2>
+    <ul class="outside">
+      <li>contoh list outside</li>
+      <li>contoh list outside</li>
+      <li>contoh list outside</li>
+    </ul>
+
+    <h2>list-style-position: inside</h2>
+    <ul class="inside">
+      <li>contoh list inside</li>
+      <li>contoh list inside</li>
+      <li>contoh list inside</li>
+    </ul>
+
+    <!-- list-style-image -->
+    <h1>Property list-style-image</h1>
+    <p>Property list-style-image menggantikan penanda daftar dengan gambar:</p>
+    <ul class="list-image">
+      <li>Kopi</li>
+      <li>The</li>
+      <li>Coca Cola</li>
+    </ul>
+
+    <!-- list-style -->
+    <h2>Property list-style</h2>
+    <p>
+      Property list-style adalah properti singkat/gabungan, yang digunakan untuk
+      menyetel semua properti list-style dalam satu deklarasi.
+    </p>
+
+    <ul class="list-style">
+      <li>Kopi</li>
+      <li>The</li>
+      <li>Coca Cola</li>
+    </ul>
+  </body>
+</html>

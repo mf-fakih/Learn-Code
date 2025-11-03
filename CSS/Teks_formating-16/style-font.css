@@ -1,0 +1,15 @@
+.normal {
+    font-style: normal;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.oblique {
+    font-style: oblique;
+    font-size: xx-large;
+    font-weight: bold;
+}

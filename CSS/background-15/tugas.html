@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Background Css</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main {
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("https://images.unsplash.com/photo-1519320669750-579a8d7f1f6a?q=80&w=1659&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        color: rgb(0, 0, 0);
+      }
+      .logo img {
+        height: 50px;
+      }
+      .menu a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+      }
+      .menu a:hover {
+        text-decoration: underline;
+        color: #ff5733;
+        transition: 0.3s;
+        font-weight: 300;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #ff5733;
+        transition: 0.3s;
+      }
+      .hero {
+        height: 400px;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+      .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        font-family: "Poppins";
+      }
+      .hero h1:hover {
+        color: #ff5733;
+        transition: 0.3s;
+      }
+      .hero p {
+        font-size: 15px;
+        max-width: 600px;
+        font-family: "Poppins";
+      }
+      .isi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        gap: 50px;
+      }
+      .gambar img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 1%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-width: 10px #000000;
+      }
+      .gambar img:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+      .text {
+        max-width: 600px;
+        font-family: "Poppins";
+        color: white;
+        text-align: justify;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+      .text h1 {
+        font-size: 36px;
+      }
+      .text h1:hover {
+        color: #ff5733;
+        transition: 0.3s;
+      }
+      .text p {
+        font-size: 18px;
+        margin: 20px 0;
+      }
+      .text button {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .text button:hover {
+        background-color: #ff5733;
+        transition: 0.3s;
+      }
+      footer {
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }      
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo">
+          <img
+            src="https://antelopecanyon.az/wp-content/uploads/sites/7571/2024/10/326334192_1379996776142111_4034655069334867423_n11.png?w=1000&h=1000&zoom=2"
+            alt="Logo"
+          />
+        </div>
+        <nav class="menu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div>
+          <button>Buy Ticket</button>
+        </div>
+      </header>
+      <section class="hero">
+        <h1 style="text-align: center; margin-top: 50px">Antelepo Canyon</h1>
+        <p style="text-align: center; margin-top: 20px">
+          Your Travel Companion in Antelope Canyon. Don't Forget There's a
+          Discount for the End of This Month. Don't Miss It! Buy Your Tickets
+          Now!!
+        </p>
+      </section>
+      <section class="isi">
+        <div class="gambar">
+          <img
+            src="https://www.agoda.com/wp-content/uploads/2020/01/Antelope-Canyon-tourists-tours.jpg"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <h1 class="space">Antelope Canyon</h1>
+          <p>
+            Antelope Canyon terbentuk oleh erosi batuan pasir Navajo, terutama
+            akibat banjir bandang dan kemudian karena proses sub-aerial. Air
+            hujan, khususnya selama musim muson, mengalir ke cekungan memanjang
+            di atas bagian ngarai celah, yang bertambah cepat dan memperbanyak
+            pasir ketika tergerus ke jalur laluan sempit itu.
+          </p>
+          <button>Buy Ticket</button>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; 2024 Antelope Canyon. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>

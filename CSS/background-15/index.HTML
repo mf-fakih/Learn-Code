@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latihan Color CSS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ========== HEADER ========== */
+    header {
+      display: flex;
+      background: linear-gradient(
+        90deg,
+        rgb(231, 254, 255) 50%,
+        rgb(0, 61, 33) 100%
+      );
+      align-items: center;
+      justify-content: space-between;
+      color: #000;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+
+    nav a {
+      color: #000;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: red;
+      transition: 0.3s;
+      text-decoration: underline;
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .search input[type="text"] {
+      width: 150px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .search button {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .login button {
+      width: 100px;
+      margin: 0 20px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+      border: 1px solid black;
+    }
+
+    /* ========== BANNER ========== */
+    .banner {
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 400px;
+      text-align: center;
+      padding: 10px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff;
+    }
+    .banner h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    .banner p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    .banner button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .banner button:hover {
+      background-color: #333;
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #f0f0f0;
+      color: rgb(0, 0, 255);
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="/CSS/LATIHAN-WARNA-14/asset/Frame 3 (4).png" alt="Logo" />
+      <h1>Web Profile Company</h1>
+    </div>
+    <nav class="menu">
+      <a href="#profil">Profile</a>
+      <a href="#Visi-Misi">Visi Misi</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#Contact">Contact</a>
+    </nav>
+    <div class="search">
+      <input type="text" placeholder="Search..." />
+      <button>Cari</button>
+    </div>
+    <div class="login">
+      <button>Login</button>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2>Selamat datang di Web Kami</h2>
+    <p>Menyediakan Informasi Terbaik Untuk Anda</p>
+    <button>Pelajari Lebih Lanjut</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Web Profile Company. All rights reserved.</p>
+  </footer>
+</body>
+</html>

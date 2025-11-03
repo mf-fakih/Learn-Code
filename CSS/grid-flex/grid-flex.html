@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 0, 0);
+        padding: 20px;
+        text-transform: capitalize;
+      }
+      nav#withFlex {
+        display: flex;
+      }
+      nav#withFlex div {
+        margin-right: 20px;
+      }
+      nav#withFlex div:last-child {
+        margin-left: auto;
+      }
+      nav#withGrid {
+        background-color: #95bddc;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr) ;
+      }
+        nav#withGrid div:last-child {
+        grid-column: 10;
+        }
+      div {
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Before FLex</h4>
+    <nav>
+      <div>home</div>
+      <div>about</div>
+      <div>contact</div>
+    </nav>
+    <h4>After FLex</h4>
+    <nav id="withFlex">
+      <div>home</div>
+      <div>about</div>
+      <div>contact</div>
+    </nav>
+    <h4>GRID</h4>
+    <nav id="withGrid">
+      <div>home</div>
+      <div>about</div>
+      <div>contact</div>
+    </nav>
+    
+  </body>
+</html>

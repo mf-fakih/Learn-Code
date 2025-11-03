@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            display: block;
+        }
+        .heading{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .subheading{
+            padding-left: 20px;
+            font-size: 15px;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            margin-right: 20px;
+        }
+        #none{
+            display: none;
+            background-color: blue;
+            height: 200px;
+        }
+        #none img{
+            display: block;
+            background-color: blue;
+            height: 100px;
+        }
+        #hidden{
+            visibility: hidden;
+            background-color: red;
+            height: 100px;
+        }
+        #hidden img{
+            display: block;
+            background-color: red;
+            height: 100px;
+        }
+        .flex-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightgrey;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        .flex-item{
+            background-color: cornflowerblue;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        .gird-continer{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto 1fr auto;
+            gap: 10px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        .header{
+            grid-column: 1 / 3;
+            background-color: lightcoral;
+            padding: 20px;
+        }
+        .sidebar{
+            background-color: lightseagreen;
+            padding: 10px;
+        }
+        .content{
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .footer{
+            grid-column: 1 / 3;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span class="heading">pelatihan</span>
+        <span class="subheading">kurikulum</span>
+        <span class="subheading">materi</span>
+        <span class="subheading">lokasi</span>
+    </div>
+    <div>
+    <span class="heading">perusahhaan</span>        
+    <span class="subheading">tim</span>        
+    <span class="subheading">visi misi</span>        
+
+    </div>
+    <li>
+        <span class="heading">kontak</span>        
+        <span class="subheading">email</span>        
+        <span class="subheading">telepon</span>        
+        <span class="subheading">alamat</span>
+    </li>
+    <div style="display: inline-block; background-color: aquamarine; width: 200px; height: 100px; margin: 10px; ">
+        katok1
+    </div>
+    <div style="display: inline-block; background-color: rgb(114, 114, 114); width: 150px; height: 150px; margin: 10px; ">
+        katok2
+    </div>
+    <P class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, molestiae.</P>
+    <div>
+        <img id="hidden" src="https://picsum.photos/200">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, suscipit.</p>
+    </div>
+    <div>
+        <img id="none" src="https://picsum.photos/200">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, suscipit.</p>
+    </div>
+    <div class="flex-continer">
+        <div class="flex-item">item 1</div>
+        <div class="flex-item">item 2</div>
+        <div class="flex-item">item 3</div>
+    </div>
+    <div class="gird-continer">
+        <div class="grid-item header">header</div>
+        <div class="grid-item sidebar">sidebar</div>
+        <div class="grid-item content">konytenman utmna</div>
+        <div class="grid-item footer">fooiter</div>
+    </div>
+</body>
+</html>

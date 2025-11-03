@@ -1,0 +1,84 @@
+   /* Selektor tag: semua elemen <p> akan diberi gaya berikut */
+    p {
+      color: blue;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Contoh tambahan: selektor tag untuk <div> */
+    div {
+      background-color: #f0f0f0;
+    }
+    .pink {
+        color: white;
+        background-color: pink;
+    }
+    .paragraf {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .text-white {
+        color: white;
+    }
+    .bg-teal {
+        background-color: teal;
+    }
+    #header {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: teal;
+    }
+    
+    .link {
+        color: white;
+        text-decoration: none;
+        background-color: blue;
+        padding: 5px;
+
+    }
+    #menu {
+        background: lightcoral;
+        color: yellow;
+        height: 600px;
+        padding: 100px;
+        margin-top: 500px;
+    }
+    .balik {
+     color: white;
+        text-decoration: none;
+        background-color: blue;
+        padding: 5px;
+
+    }
+    input[type="text"] {
+        color: black;
+        background: none;
+        padding: 10px;
+        border: 1px solid black;
+        width: 300px;
+    }
+    *{border: 3px solid greenyellow;
+    margin: 0;
+    
+    padding: 0;
+}
+a:hover {
+    color: green;
+    background: black;
+    padding: 5px;
+    text-decoration: none;
+}
+p span {
+    color: red;
+    font-weight: bold;
+}
+p::first-line {
+    color: orange;
+    font-size: 18px;
+    font-weight: bold;
+}
+#content p {
+    color: purple;
+    font-size: 16px;
+}

@@ -1,0 +1,16 @@
+header h1{
+    text-align: center;
+}
+.rata-kiri {
+  text-align: left;
+  
+}
+.rata-tengah {
+  text-align: center;
+}
+.rata-kanan {
+  text-align: right;
+}
+.justify {
+  text-align: justify;
+}

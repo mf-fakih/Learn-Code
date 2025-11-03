@@ -1,0 +1,13 @@
+ header {
+            color: rgb(0, 255, 234);
+        }
+        h1 {
+            text-align: center;
+        text-transform: uppercase;
+        }
+        p {
+            font-family: Arial;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #004ca3;
+        }

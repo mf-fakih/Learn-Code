@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0; 
+            overflow: hidden;
+            background-color: #333;
+        }
+        .container{
+          width: 100%;
+        }
+        .sidebar {
+            float: left;
+            width: 30%;
+            background: rgb(255, 0, 0);
+        }
+        .content{
+            float: right;
+            width: 70%;
+            background: lightgray;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+            
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhNhtqtnswc6iC8kfqbAp70bKxbkRTogHLXJW56o0njSQBQDPsY4bkHEOQCivVd4-lamBr2rg9F9CnyYRlFpzaIpS69gkDGkGOvYA_b61w"
+      alt=""
+      style="float: right; width: 150px;"
+    />
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. A at
+      voluptatibus minus corrupti, quam nulla odit? Doloremque rem possimus,
+      assumenda quas iste porro ad placeat illo nemo. Porro ipsum nihil placeat
+      ipsa adipisci iusto iure iste neque repudiandae quasi? Ad commodi,
+      pariatur quas repudiandae ipsum culpa! Ab aliquid culpa dolor sapiente cum
+      est cupiditate nulla illo suscipit repudiandae libero aperiam rerum
+      inventore accusantium voluptates ratione, officia quaerat ullam fugiat
+      facilis perferendis, numquam quia alias! Deserunt dolore, voluptate magnam
+      itaque odit in tempore, quas eligendi similique maxime voluptatem nulla
+      magni. Sint nam sapiente vero, maxime vel nisi ex harum exercitationem
+      aspernatur.
+    </p>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content-clearfix">
+        <div class="sidebar" >sidebar</div>
+        <div class="content" >content</div>
+    </div>
+    <div class="container clearfix">
+
+    </div>
+
+  </body>
+</html>

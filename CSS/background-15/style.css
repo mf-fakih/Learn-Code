@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  background: #57c785;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+nav a:hover {
+  color: rgb(255, 0, 0);
+  transition: 0.3s;
+  text-decoration: underline;
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.search input[type="text"] {
+  width: 150px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.search button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  border-radius: 5px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+.login button {
+  width: 100px;
+  margin: 0 20px;
+  padding: 5px 10px;
+  border: none;
+
+  border-radius: 5px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid black;
+}
+h1 {
+  font-size: 20px;
+}
+.banner {
+  background: url("/CSS/background-15/asset/background.jpg") ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  text-align: center;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.banner p {
+  font-size: 1.2rem;
+  color: 333;
+}
+.banner button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: 46e5aa;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid black;
+  font-size: 1rem;
+}
+footer {
+    color: sandybrown;
+    background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 0, 0, 1) 100%
+  );
+}

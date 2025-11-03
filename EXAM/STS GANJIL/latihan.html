@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan STS Ganjil - Muhammad Fakhril Fakih</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #a8edea, #fed6e3);
+        color: #333;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(90deg, #89f7fe, #66a6ff);
+        padding: 20px 50px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      header img {
+        width: 70px;
+        border-radius: 10px;
+      }
+
+      nav {
+        display: flex;
+        gap: 25px;
+      }
+
+      nav a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #222;
+        background-color: white;
+        padding: 8px 15px;
+        border-radius: 20px;
+      }
+
+      /* Section umum */
+      section {
+        width: 85%;
+        margin: 80px auto;
+        padding: 60px 40px;
+        border-radius: 25px;
+        background: white;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      }
+      section:hover {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px);
+        transition: 0.3s;
+      }
+
+      /* Bagian Profil */
+      .rudal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+      }
+
+      .circle-img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 6px solid #66a6ff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .circle-img:hover {
+        transform: scale(1.07);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .text-box h1 {
+        font-size: 32px;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      .text-box p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.7;
+      }
+
+      /* Tabel Mata Pelajaran */
+      .tabel h1 {
+        text-align: center;
+        color: #444;
+        margin-bottom: 30px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 15px;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      th {
+        background-color: #89f7fe;
+        color: #333;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #e1f5fe;
+      }
+
+      /* Form Kontak */
+      .contact h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      label {
+        font-weight: 600;
+      }
+
+      input {
+        padding: 12px 15px;
+        border: 2px solid #89f7fe;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: #66a6ff;
+        box-shadow: 0 0 8px rgba(102, 166, 255, 0.5);
+      }
+
+      button {
+        background: linear-gradient(90deg, #66a6ff, #89f7fe);
+        color: white;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        transform: scale(1.05);
+        background: linear-gradient(90deg, #89f7fe, #66a6ff);
+      }
+
+      footer {
+        text-align: center;
+        padding: 25px;
+        background: linear-gradient(90deg, #66a6ff, #89f7fe);
+        color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-top: 60px;
+      }
+
+      @media (max-width: 800px) {
+        .rudal {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        section {
+          width: 100%;
+          padding: 40px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h2 style="color: white; margin: 0">My Portfolio</h2>
+        <p style="color: white; margin: 0; font-size: 14px">
+          by Muhammad Fakhril Fakih
+        </p>
+      </div>
+      <img src="Frame 3 (4).png" alt="Logo" />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="rudal">
+        <img
+          src="/EXAM/STS GANJIL/538153780_17995226021820342_2140.png"
+          alt="Foto Profil"
+          class="circle-img"
+        />
+        <div class="text-box">
+          <h1>Muhammad Fakhril Fakih</h1>
+          <p>
+            Halo! Saya Fakhril, seorang pelajar yang suka dengan dunia desain,
+            coding, dan teknologi. Saya suka bereksperimen dengan warna dan
+            layout biar tampilannya menarik tapi tetap fungsional!
+          </p>
+        </div>
+      </section>
+
+      <section class="tabel">
+        <h1>Mata Pelajaran Favorit</h1>
+        <table>
+          <tr>
+            <th>No</th>
+            <th>Mata Pelajaran</th>
+            <th>Alasan Suka</th>
+            <th>Tingkat Kesukaan (1-10)</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Informatika</td>
+            <td>Suka ngoding dan bikin website interaktif.</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Bahasa Inggris</td>
+            <td>Seru bisa ngerti film dan lagu tanpa subtitle.</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Matematika</td>
+            <td>Menantang dan bikin logika makin tajam.</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Seni Budaya</td>
+            <td>Bisa mengekspresikan ide dengan bebas.</td>
+            <td>7</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="contact">
+        <h1>Hubungi Saya</h1>
+        <form action="#" method="POST">
+          <label for="nama">Nama:</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Masukkan nama lengkap Anda"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="contoh: user@example.com"
+            required
+          />
+
+          <label for="pesan">Pesan:</label>
+          <input
+            type="text"
+            id="pesan"
+            name="pesan"
+            placeholder="Tulis pesan Anda di sini..."
+            required
+          />
+
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright © 2025 Muhammad Fakhril Fakih</p>
+    </footer>
+  </body>
+</html>

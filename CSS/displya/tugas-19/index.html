@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas-19</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background: #a8a8a8;
+        background: radial-gradient(
+          circle,
+          rgba(168, 168, 168, 1) 0%,
+          rgba(0, 0, 0, 1) 100%
+        );
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      main {
+        justify-content: center;
+        gap: 50px;
+        padding: 20px;
+        display: flex;
+      }
+      section {
+        margin: 0 10px;
+      }
+      .nomor {
+        background-color: #fe6347;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+        border-radius: 8px 8px 8px 8px;
+        width: 300px;
+        height: auto;
+        /* padding: 5px 0px 5px 0px; */
+      }
+      .nomor:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+      .nomor div {
+        background-color: white;
+        height: 83%;
+        justify-content: center;
+        align-items: center;
+
+        /* padding: 20px 200px 20px 20px; */
+      }
+      .nomor h2 {
+        text-align: center;
+        color: white;
+      }
+      .nomor div ol {
+        /* padding: 10px; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+      }
+      .nomor div ol li#dua,
+      #empat,
+      #enam {
+        background-color: #eeeeee;
+        /* padding: 10px; */
+      }
+
+      .titik {
+        /* border-top: #ffb901 solid 70px; */
+        background-color: #ffb901;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+        border-radius: 8px 8px 8px 8px;
+        width: 300px;
+        height: auto;
+        border-bottom: #ffb901 solid 10px;
+        /* padding: 5px 0px 5px 0px; */
+      }
+      .titik:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+      .titik div {
+        justify-content: center;
+        background-color: white;
+        height: 85%;
+        /* padding: 20px 10px 20px 20px; */
+      }
+      .titik h2 {
+        text-align: center;
+        color: white;
+      }
+      .titik div ul {
+        /* padding: 10px; */
+        padding-top: 10px;
+        line-height: 20px;
+        padding-bottom: 10px;
+      }
+      .titik div ul#abu {
+        background-color: #eeeeee;
+        /* padding: 10px; */
+        border-top: #ffb901 solid 3px;
+        border-bottom: #ffb901 solid 3px;
+      }
+
+      .deskripsi {
+        background-color: #00a8e8;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+        border-radius: 8px 8px 8px 8px;
+        width: 300px;
+        height: auto;
+        padding: 5px 0px 5px 0px;
+      }
+      .deskripsi:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+      .deskripsi div {
+        background-color: white;
+        padding: 10px;
+      }
+      .deskripsi h2 {
+        text-align: center;
+        color: white;
+      }
+      .deskripsi div dl dt {
+        font-weight: bold;
+        margin-top: 10px;
+        color: red;
+      }
+      .deskripsi div dl dd {
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>List In Html</h1>
+    </header>
+    <main>
+      <section class="nomor">
+        <h2>Ordered List</h2>
+        <div>
+          <ol>
+            <li>Information Gathering</li>
+            <li id="dua">Planning</li>
+            <li>Design</li>
+            <li style="background-color: #eeeeee" id="empat">Development</li>
+            <li>Testing & Deployment</li>
+            <li id="enam">Maintenance</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="titik">
+        <h2>Unordered List</h2>
+        <div>
+          <ul style="list-style-type: square">
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <ul style="list-style-type: circle" id="abu">
+            <li>SQL</li>
+            <li>PHP</li>
+          </ul>
+          <ul style="list-style-type: disc">
+            <li>JavaScript</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="deskripsi">
+        <h2>Description List</h2>
+        <div>
+          <dl>
+            <dt>HTML</dt>
+            <dd>
+              HTML adalah singkatan dari HyperText Markup Language, yaitu bahasa
+              standar untuk membuat dan menyusun halaman web.
+            </dd>
+
+            <dt>CSS</dt>
+            <dd>
+              CSS adalah singkatan dari Cascading Style Sheets, yaitu bahasa
+              yang digunakan untuk mengatur tampilan dan tata letak halaman web.
+            </dd>
+
+            <dt>JavaScript</dt>
+            <dd>
+              JavaScript adalah bahasa pemrograman yang digunakan untuk membuat
+              halaman web menjadi interaktif dan dinamis.
+            </dd>
+          </dl>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
