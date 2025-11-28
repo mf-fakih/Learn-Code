@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:hover {
+            color: red;
+            font-size: 30px;
+            background-color: yellow;
+        }
+
+        p::first-letter {
+            color: blue;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        div{
+            transition: background-color 0.5s ;
+        }
+        div:hover{
+            background-color: lightgrey;
+        }
+        @keyframes geser{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(500px);
+            }
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: coral;
+            animation-name: geser;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        p{
+            display: none;
+            background-color: maroon;
+            color: white;
+            padding: 10px;
+        }
+        div.p:hover p{
+            transform: 9.0s ease-in-out;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- pseudo class link -->
+    <a href="">ini text link</a>
+    <p>ini paragraf</p>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolores illum mollitia molestiae possimus quia
+        voluptas repellendus beatae fugit sunt facere nulla cumque, expedita itaque in molestias quam, veniam saepe!
+    </div>
+
+    <!-- pseudo VISITED -->
+     <a href="visited"> visitidted</a>
+
+
+
+
+     <div class="p">
+        hover me to see effect
+        <p>tada im here</p>
+     </div>
+
+     
+</body>
+
+</html>
