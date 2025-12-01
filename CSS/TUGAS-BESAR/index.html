@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Tugas Besar-2 Poster</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background: #FEEAC9;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .card {
+            position: relative;
+            width: 500px;
+            height: auto;
+            background-color: #FABEC0;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0px;
+            padding: 40px 20px 0px 0px;
+            color: rgb(0, 0, 0);
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            transition: 0.5s;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: left;
+
+        }
+
+        .text h2 {
+            margin: 0;
+            line-height: 0.9;
+            font-family: "poppins";
+            font-size: 70px;
+            width: 90%;
+            cursor: pointer;
+            animation: moveInLeft 0.5s ease-out forwards;
+            transition: 1s;
+        }
+
+        .text h2:hover {
+            color: #fc8488;
+            transition: 1s;
+            transform: scale(1.2);
+        }
+
+        .text blockquote {
+            animation: moveInTop 0.5s ease-out forwards;
+            font-family: "poppins", ;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .text blockquote:hover {
+            color: #fc8488;
+            transition: 1s;
+            transform: scale(1.2);
+        }
+
+        .text blockquote::before {
+            font-family: sans-serif;
+            content: "“";
+            font-size: 100px;
+            vertical-align: top;
+            line-height: 0.7;
+            margin-right: 10px;
+        }
+
+        .card img {
+            animation: moveInRigth 0.5s ease-out forwards;
+            margin-left: auto;
+            width: 300px;
+            height: auto;
+        }
+
+        @keyframes moveInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes moveInRigth {
+            0% {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes moveInTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pop {
+            from {
+                transform: blur(5px);
+            }
+
+            to {
+                transform: blur(0px);
+            }
+        }
+
+
+        /* sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+        .sidebar div {
+            background-color: #FABEC0;
+            padding: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-family: '';
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        .sidebar div:hover {
+            background-color: #fc8488;
+            color: #fff;
+            transition: 0.3s;
+        }
+        .save {
+            border-radius: 0 10px 10px 0;
+            font-size: 25px;
+        }
+        .like {
+            border-radius: 0 10px 10px 0;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="card">
+        <div class="text">
+            <blockquote>lelah itu pasti menyerah itu bukan solusi.</blockquote>
+            <h2>Don Draper. </h2>
+        </div>
+        <img src="./remove bg don dreper 1.png" alt="">
+        <div class="sidebar">
+            <div class="save">💾</div>
+            <div class="like">❤️</div>
+        </div>
+    </div>
+</body>
+
+</html>
